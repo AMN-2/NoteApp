@@ -1,6 +1,7 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+import 'package:noteapp/views/notes_view.dart';
 
 void main() {
   runApp(NoteApp());
@@ -12,34 +13,16 @@ class NoteApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
+          useMaterial3: true,
           appBarTheme: AppBarTheme(
-        foregroundColor: Colors.white,
-        backgroundColor: const Color.fromARGB(255, 52, 44, 22),
-      )),
-      home: Home(),
+            foregroundColor: Colors.white,
+            backgroundColor: const Color.fromARGB(255, 52, 44, 22),
+          )),
+      home: NotesView(),
+      
     );
   }
 }
 
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      drawer: Drawer(),
-      body: Center(
-        child: Text(
-          'Note App Is Here ',
-          style: TextStyle(
-            fontSize: 30,
-            color: const Color.fromARGB(255, 52, 44, 22),
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
-    );
-  }
-}
