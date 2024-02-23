@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class NoteItem extends StatelessWidget {
-   NoteItem({super.key, required this.mainColor});
-  final Color mainColor ; 
+  NoteItem({super.key, required this.mainColor});
+  final Color mainColor;
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +14,7 @@ class NoteItem extends StatelessWidget {
       height: 250,
       width: double.infinity,
       decoration: BoxDecoration(
+        image: DecorationImage(image: AssetImage('images/1.jpg') , opacity: 0.1),
         color: mainColor,
         borderRadius: BorderRadius.circular(20),
       ),

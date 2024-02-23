@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
+import 'package:noteapp/views/widgets/coustem_appbar.dart';
 import 'package:noteapp/views/widgets/note_Item.dart';
 
 class NotesView extends StatelessWidget {
@@ -11,52 +12,28 @@ class NotesView extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         shape: CircleBorder(),
-        backgroundColor: Color.fromARGB(255, 155, 240, 255),
+        backgroundColor: Color.fromARGB(255, 134, 97, 51),
         onPressed: () {},
         child: Icon(
           Icons.add,
           size: 30,
-          color: Color.fromARGB(255, 0, 0, 0),
+          color: Color.fromARGB(255, 255, 255, 255),
         ),
       ),
       backgroundColor: const Color.fromARGB(221, 35, 35, 35),
       // drawer: Drawer(),
       body: Container(
         margin: EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/2.png'),
+          ),
+        ),
         // color: Colors.white,
         child: Column(
           children: [
             // coustem appbar
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Notes',
-                  style: GoogleFonts.sourceCodePro(
-                    fontSize: 35,
-                    fontWeight: FontWeight.normal,
-                    color: Colors.white,
-                  ),
-                ),
-                Container(
-                  height: 55,
-                  width: 55,
-                  decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 37, 37, 37),
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Center(
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.search,
-                        size: 30,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            CoustemAppbar(),
             // coustem appbar
             Container(
               width: double.infinity,
@@ -67,7 +44,7 @@ class NotesView extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4),
-                    child: NoteItem(mainColor: Color.fromARGB(255, 185, 247, 187) ),
+                    child: NoteItem(mainColor: Color.fromARGB(255, 114, 63, 0)),
                   );
                 },
               ),
