@@ -9,13 +9,17 @@ class CoustemAppbar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          'Notes',
-          style: GoogleFonts.sourceCodePro(
-            fontSize: 35,
-            fontWeight: FontWeight.normal,
-            color: Colors.white,
-          ),
+        Row(
+          children: [
+            Text(
+              'Notes',
+              style: GoogleFonts.sourceCodePro(
+                fontSize: 35,
+                fontWeight: FontWeight.normal,
+                color: Colors.white,
+              ),
+            ),
+          ],
         ),
         Container(
           height: 55,
