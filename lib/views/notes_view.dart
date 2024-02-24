@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
 import 'package:noteapp/views/widgets/coustem_appbar.dart';
+import 'package:noteapp/views/widgets/new_note.dart';
 import 'package:noteapp/views/widgets/note_Item.dart';
 
 class NotesView extends StatelessWidget {
@@ -10,16 +11,7 @@ class NotesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
-        backgroundColor: Color.fromARGB(255, 134, 97, 51),
-        onPressed: () {},
-        child: Icon(
-          Icons.add,
-          size: 30,
-          color: Color.fromARGB(255, 255, 255, 255),
-        ),
-      ),
+      floatingActionButton: Add_Note(),
       backgroundColor: const Color.fromARGB(221, 35, 35, 35),
       // drawer: Drawer(),
       body: Container(

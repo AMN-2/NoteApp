@@ -15,7 +15,7 @@ class CoustemAppbar extends StatelessWidget {
               'Notes',
               style: GoogleFonts.sourceCodePro(
                 fontSize: 35,
-                fontWeight: FontWeight.normal,
+                fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),

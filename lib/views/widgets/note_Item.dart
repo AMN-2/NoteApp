@@ -14,7 +14,10 @@ class NoteItem extends StatelessWidget {
       height: 250,
       width: double.infinity,
       decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage('images/1.jpg') , opacity: 0.1),
+        image: DecorationImage(
+          image: AssetImage('images/1.jpg'),
+          opacity: 0.1,
+        ),
         color: mainColor,
         borderRadius: BorderRadius.circular(20),
       ),
