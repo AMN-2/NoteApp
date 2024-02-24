@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CoustemAppbar extends StatelessWidget {
-  const CoustemAppbar({super.key});
-
+ const CoustemAppbar({required this.btnIcon});
+   final btnIcon;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -29,12 +29,11 @@ class CoustemAppbar extends StatelessWidget {
               borderRadius: BorderRadius.circular(30)),
           child: Center(
             child: IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.search,
-                size: 30,
-                color: Colors.white,
-              ),
+              onPressed: () {
+                print('search') ;
+              },
+              icon: btnIcon,
+              iconSize: 30,
             ),
           ),
         ),

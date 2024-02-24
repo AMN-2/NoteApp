@@ -25,7 +25,7 @@ class NotesView extends StatelessWidget {
         child: Column(
           children: [
             // coustem appbar
-            CoustemAppbar(),
+            CoustemAppbar(btnIcon: Icon(Icons.search),),
             // coustem appbar
             Container(
               width: double.infinity,
