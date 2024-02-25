@@ -12,10 +12,11 @@ class Add_Note extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 134, 97, 51),
       onPressed: () {
         showModalBottomSheet<void>(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           context: context,
           builder: (BuildContext context) {
-            return const AddNoteButtomSheet();
+            return  AddNoteButtomSheet();
           },
         );
       },
