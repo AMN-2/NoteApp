@@ -15,7 +15,7 @@ class Add_Note extends StatelessWidget {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           context: context,
-          builder: (BuildContext context) {
+           builder: (BuildContext context) {
             return  AddNoteButtomSheet();
           },
         );

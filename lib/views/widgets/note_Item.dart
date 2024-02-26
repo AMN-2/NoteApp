@@ -55,6 +55,11 @@ class NoteItem extends StatelessWidget {
                   size: 50,
                 ),
               ),
+              leading: Icon(
+                Icons.person,
+                size: 30,
+                color: Colors.white,
+              ),
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),

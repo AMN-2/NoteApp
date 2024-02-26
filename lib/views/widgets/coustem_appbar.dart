@@ -12,7 +12,7 @@ class CoustemAppbar extends StatelessWidget {
         Row(
           children: [
             Text(
-              'Notes',
+              ' Hassan J',
               style: GoogleFonts.sourceCodePro(
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
