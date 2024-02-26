@@ -12,6 +12,7 @@ class CustemTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       autofocus: true,
+      cursorErrorColor: Colors.red,
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'field is reqierd ';
